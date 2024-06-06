@@ -11,7 +11,7 @@ public class CanvasSwitcher : MonoBehaviour
     {
         if (canvasToDestroy != null && canvasToInstantiate != null)
         {
-            if(other.gameObject.name == "ControllerGrabLocation")
+            if (other.gameObject.name == "ControllerGrabLocation" || other.gameObject.name == "Collider")
             {
                 // Get the position and rotation of the canvas to be destroyed
                 Vector3 position = canvasToDestroy.transform.position;

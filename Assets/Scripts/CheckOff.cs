@@ -8,7 +8,7 @@ public class CheckOff : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "ControllerGrabLocation")
+        if (other.gameObject.name == "ControllerGrabLocation" || other.gameObject.name == "Collider")
         {
             Destroy(objectToDestroy);
         }
