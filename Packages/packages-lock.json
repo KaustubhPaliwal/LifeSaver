@@ -96,6 +96,16 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.meta.xr.simulator.samples": {
+      "version": "65.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.meta.xr.sdk.core": "65.0.0",
+        "com.meta.xr.simulator": "65.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.ai.navigation": {
       "version": "1.1.5",
       "depth": 2,
@@ -238,7 +248,7 @@
       }
     },
     "com.unity.visualscripting": {
-      "version": "1.9.2",
+      "version": "1.9.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {
