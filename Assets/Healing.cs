@@ -10,21 +10,30 @@ public class Healing : MonoBehaviour
     public Canvas page4;
     public GameObject wrist;
     public Material Highlight;
+    public GameObject Thermo;
+    public Material ThermoDefault;
+    public Material ThermoNew;
+
+    private void Start()
+    {
+        Thermo.GetComponent<MeshRenderer>().material = ThermoNew;
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.Contains("Vaccine"))
+        if (other.gameObject.name.Contains("Thermometer"))
         {
-            Destroy(other.gameObject);
             StartCoroutine(BodyScanRoutine());
         }
     }
 
     private IEnumerator BodyScanRoutine()
     {
+        Thermo.GetComponent<MeshRenderer>().material = ThermoDefault;
         healing.SetActive(true);
         Destroy(this.GetComponent<SpriteRenderer>());
         page4.gameObject.SetActive(false);
         healingDone.gameObject.SetActive(true);
+        healingDone.GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(3f);
         healingDone.gameObject.SetActive(false);
         transfStart.gameObject.SetActive(true);

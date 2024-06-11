@@ -33,7 +33,7 @@ public class VoiceIntentController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+        if (OVRInput.GetDown(OVRInput.Button.Three))
         {
             appVoiceExperience.Activate();
         }
@@ -56,6 +56,8 @@ public class VoiceIntentController : MonoBehaviour
                 torniquet.gameObject.SetActive(true);
                 return;
             }
+
+         
 
             Debug.Log("Entered Checkoff: Name:" + medicalEquipment.transform.GetChild(itemCount).gameObject.name);
             Debug.Log("Name of children:" + medicalEquipment.transform.GetChild(itemCount).GetChild(1).gameObject.name);
