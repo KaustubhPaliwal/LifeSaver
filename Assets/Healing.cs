@@ -14,9 +14,12 @@ public class Healing : MonoBehaviour
     public Material ThermoDefault;
     public Material ThermoNew;
 
-    private void Start()
+    private void Update()
     {
-        Thermo.GetComponent<MeshRenderer>().material = ThermoNew;
+        if (page4.isActiveAndEnabled)
+        {
+            Thermo.GetComponent<MeshRenderer>().material = ThermoNew;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -33,10 +36,10 @@ public class Healing : MonoBehaviour
         Destroy(this.GetComponent<SpriteRenderer>());
         page4.gameObject.SetActive(false);
         healingDone.gameObject.SetActive(true);
-        healingDone.GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(3f);
         healingDone.gameObject.SetActive(false);
         transfStart.gameObject.SetActive(true);
+        healing.GetComponent<SpriteRenderer>().color = Color.red;
         wrist.GetComponent<MeshRenderer>().material = Highlight;
     }
 }
