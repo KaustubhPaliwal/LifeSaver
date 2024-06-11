@@ -169,7 +169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Great job, you have successfuly closed the wound. Once you are done, turn
+  m_text: Great job, you have successfully closed the wound. Once you are done, turn
     off and safely set aside the cautery device. Cover the wound with sterile gauze
     located in the backpack.
   m_isRightToLeft: 0

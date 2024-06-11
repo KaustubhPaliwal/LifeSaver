@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The patient is experience extreme bloodf loss and is in need of critical
+  m_text: The patient is experiencing extreme blood loss and is in need of critical
     care. Please place the bionic ring onto their ring finger for further monitoring.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1777736974376864535
 MonoBehaviour:
   m_ObjectHideFlags: 0

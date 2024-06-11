@@ -378,7 +378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Blood transfustion in progress...
+  m_text: 'Blood transfusion in progress...
 
     Please hydrate patient.'
   m_isRightToLeft: 0
