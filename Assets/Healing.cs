@@ -14,6 +14,7 @@ public class Healing : MonoBehaviour
     {
         if (other.gameObject.name.Contains("Vaccine"))
         {
+            Destroy(other.gameObject);
             StartCoroutine(BodyScanRoutine());
         }
     }

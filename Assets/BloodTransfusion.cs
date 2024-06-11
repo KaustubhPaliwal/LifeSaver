@@ -13,7 +13,7 @@ public class BloodTransfusion : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name==("Blood Bag"))
+        if (other.gameObject.name==("Blood_Bag"))
         {
             StartCoroutine(BodyScanRoutine());
         }

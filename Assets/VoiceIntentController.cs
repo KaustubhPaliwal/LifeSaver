@@ -18,6 +18,7 @@ public class VoiceIntentController : MonoBehaviour
     public Canvas mapMenu;
     public Canvas scanLoading;
     public Canvas page4;
+    public Canvas vitalScan;
     public int itemCount;
     public GameObject patient;
     public Material temperature;
@@ -91,7 +92,7 @@ public class VoiceIntentController : MonoBehaviour
 
     public void mapSearch(String[] info)
     {
-        torniquet.gameObject.SetActive(false);
+        vitalScan.gameObject.SetActive(false);
         mapMenu.gameObject.SetActive(true);
     }
 
